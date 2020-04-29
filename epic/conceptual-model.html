@@ -11,32 +11,42 @@
 <H2><strong>Entities and Attributes:</strong></H2>
 <p><strong>Profile:</strong></p>
 <ul>
-    <li>ProfileAvatarID</li>
-    <li>ProfileActivationTokenID</li>
-    <li>ProfileEmail</li>
-    <li>ProfileHash</li>
-    <li>ProfileUserName</li>
-    <li>ProfileMusicID</li>
+    <li>profileID (Primary key)</li>
+    <li>profileAvatar</li>
+    <li>profileActivationToken</li>
+    <li>profileEmail</li>
+    <li>profileHash</li>
+    <li>profileMusic</li>
+    <li>profileUserName</li>
+
 </ul>
 
 <p><strong>Community Room:</strong></p>
 <ul>
-    <li>CommunityRoomID</li>
+    <li>commRoomID (Primary key)</li>
+    <li>commRoomProfileID</li>
+    <li>commRoomSubscriberProfileID</li>
 </ul>
 
 <p><strong>Subscriber:</strong></p>
 <ul>
-    <li>SubscriberID</li>
+    <li>subscriberID (Foreign key)</li>
+    <li>subscriberAvatar</li>
 </ul>
 
 <p><strong>Relationship:</strong></p>
 <ul>
-    <li><strong>One</strong>profile can make <strong>many</strong>community rooms.</li>
+    <li><strong>One</strong> profile can make <strong>many</strong> community rooms.</li>
+    <li><strong>Many</strong> subscribers can be in <strong>one</strong> community room.</li>
+    <li><strong>Many</strong> subscribers can make <strong>many</strong> community rooms.</li>
 
 </ul>
 
 
 <H1><strong>Entity Relationship Diagram:</strong></H1>
+
+<img src="Entity%20Relationship%20Diagram%20Cohort-29.PNG" alt="entity relationship diagram" />
+
 <p>
     Select a link to continue.
 </p>
