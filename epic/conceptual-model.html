@@ -21,24 +21,24 @@
 
 </ul>
 
-<p><strong>Community Room:</strong></p>
+<p><strong>Room:</strong></p>
 <ul>
-    <li>commRoomId (Primary key)</li>
-    <li>commRoomProfileId</li>
-    <li>commRoomSubscriberProfileID</li>
+    <li>roomId (Primary key)</li>
+    <li>roomProfileId</li>
+    <li>roomSubscriberProfileID</li>
 </ul>
 
-<p><strong>Subscriber:</strong></p>
+<p><strong>Subscribe:</strong></p>
 <ul>
-    <li>subscriberId (Foreign key)</li>
-    <li>subscriberAvatar</li>
+    <li>subscribeId (Foreign key)</li>
+    <li>subscribeAvatar</li>
 </ul>
 
 <p><strong>Relationship:</strong></p>
 <ul>
-    <li><strong>One</strong> profile can make <strong>many</strong> community rooms.</li>
-    <li><strong>Many</strong> subscribers can be in <strong>one</strong> community room.</li>
-    <li><strong>Many</strong> subscribers can make <strong>many</strong> community rooms.</li>
+    <li><strong>One</strong> profile can make <strong>many</strong> rooms.</li>
+    <li><strong>Many</strong> subscribers can be in <strong>one</strong> room.</li>
+    <li><strong>Many</strong> subscribers can make <strong>many</strong> rooms.</li>
 
 </ul>
 
