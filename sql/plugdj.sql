@@ -21,8 +21,8 @@ CREATE TABLE profile  (
 CREATE TABLE room  (
   roomId BINARY(16) NOT NULL,
   roomProfileId BINARY(16) NOT NULL,
-  FOREIGN KEY (roomprofileId)
-  PRIMARY KEY (roomId)
+  PRIMARY KEY (roomId),
+  FOREIGN KEY (roomProfileId)
 );
 
 
@@ -30,7 +30,7 @@ CREATE TABLE subscribe  (
   subscribeProfileId BINARY(16) NOT NULL,
   subscribeRoomId BINARY(16) NOT NULL,
   subscribeAvatar VARCHAR(255) NOT NULL,
-  FOREIGN KEY (subscribeProfileId)
-  FOREIGN KEY (subscribeRoomId)
+  FOREIGN KEY (subscribeProfileId),
+  FOREIGN KEY (subscribeRoomId),
   FOREIGN KEY (subscribeAvatar)
 );
