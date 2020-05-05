@@ -9,19 +9,25 @@ DROP TABLE IF EXISTS subscribe;
 CREATE TABLE profile
   profileId BINARY(16) NOT NULL,
   profileActivationToken CHAR(32),
-  profileAvatar
+  profileAvatar VARCHAR(255) NOT NULL,
   profileEmail VARCHAR(128) NOT NULL,
   profileHash CHAR(97) NOT NULL,
-  profileMusic
-  profileUserName
+  profileMusic VARCHAR(255) NOT NULL,
+  profileUserName VARCHAR(32) NOT NULL,
   PRIMARY KEY (profileId)
 
 CREATE TABLE room
   roomId BINARY(16) NOT NULL,
-  roomProfileId(16) NOT NULL,
+  roomProfileId BINARY(16) NOT NULL,
   FOREIGN KEY (roomprofileId)
   PRIMARY KEY (roomId)
 
 
 CREATE TABLE subscribe
+  subscribeProfileId BINARY(16) NOT NULL,
+  subscribeRoomId BINARY(16) NOT NULL,
+  subscribeAvatar VARCHAR(255) NOT NULL,
+  FOREIGN KEY (subscribeProfileId)
+  FOREIGN KEY (subscribeRoomId)
+  FOREIGN KEY (subscribeAvatar)
 
