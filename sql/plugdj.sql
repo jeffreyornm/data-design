@@ -19,6 +19,9 @@ CREATE TABLE profile
 CREATE TABLE room
   roomId BINARY(16) NOT NULL,
   roomProfileId(16) NOT NULL,
+  FOREIGN KEY (roomprofileId)
+  PRIMARY KEY (roomId)
 
 
 CREATE TABLE subscribe
+
