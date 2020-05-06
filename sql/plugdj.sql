@@ -31,6 +31,5 @@ CREATE TABLE subscribe  (
   subscribeRoomId BINARY(16) NOT NULL,
   subscribeAvatar VARCHAR(255) NOT NULL,
   FOREIGN KEY (subscribeProfileId) REFERENCES profile(profileId),
-  FOREIGN KEY (subscribeRoomId) REFERENCES room(roomId),
-  FOREIGN KEY (subscribeAvatar)
+  FOREIGN KEY (subscribeRoomId) REFERENCES room(roomId)
 );
