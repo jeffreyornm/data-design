@@ -1,8 +1,10 @@
  -- Drop Table --
 
-DROP TABLE IF EXISTS profile;
-DROP TABLE IF EXISTS room;
 DROP TABLE IF EXISTS subscribe;
+DROP TABLE IF EXISTS room;
+DROP TABLE IF EXISTS profile;
+
+
 
  -- Create Table --
 
