@@ -71,5 +71,8 @@ CREATE TABLE subscribe  (
 #990122a1-40f7-4f75-852e-9f35a461140d
 
 
- INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
- VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway');
+ INSERT INTO profile (profileId)  VALUES (UNHEX("fbb9c6e5-4008-4055-871f-6e32016bdf71"));
+
+ INSERT INTO room (roomId)  VALUES (UNHEX("f1fb2c82-17b9-4818-958c-4d31c0b9be24"));
+
+ INSERT INTO subscribe (subscribeProfileId)  VALUES (UNHEX("67c52ad0-d38e-4bd6-a69b-ccb0de032237"))
